@@ -14,8 +14,8 @@
 </head>
 <body>
     <div id="app">
-        <div class="cart">Cart: {{ cart }}</div>
-        <product-display></product-display>
+        <cart-display :cart="cart"></cart-display>
+        <product-display @add-to-cart="addToCart"></product-display>
         
     </div>
 
@@ -23,6 +23,7 @@
     <script src="./main.js"></script>
         <!-- IMPOT DO COMPONETE -->
     <script src="./Components/Product.js"></script>
+    <script src="./Components/Cart.js"></script>
     <!-- MONTA DO APP -->
     <script> app.mount('#app') </script>
 </body>
