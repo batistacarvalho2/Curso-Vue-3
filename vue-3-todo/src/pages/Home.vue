@@ -1,11 +1,10 @@
 <template>
-    <h1>Olá Mundo!!</h1>
+<list-tasks/>
 </template>
 
 <script>
-export default {
+import ListTasksVue from '@/components/ListTasks.vue'
 
-}
 </script>
 
 <style></style>
